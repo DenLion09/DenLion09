@@ -1,0 +1,1 @@
+sudo apt install git python nodejs zelijj neovim && 
