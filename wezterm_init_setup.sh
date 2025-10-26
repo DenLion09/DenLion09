@@ -11,7 +11,7 @@ set -e
 instalar_basicos() {
   echo "🔧 Instalando paquetes base..."
   sudo apt update
-  sudo apt install -y git curl wget unzip build-essential software-properties-common
+  sudo apt install -y curl wget unzip build-essential software-properties-common
 }
 
 # 🐟 Instalar y configurar Fish Shell
@@ -80,14 +80,11 @@ local wezterm = require 'wezterm'
 
 return {
   color_scheme = "Tokyo Night",
-  font_size = 13.0,
+  font_size = 24.0,
   window_background_opacity = 0.85,
   enable_tab_bar = false,
   hide_mouse_cursor_when_typing = true,
   use_fancy_tab_bar = false,
-}
-EOF
-  echo "📦 Recuerda instalar WezTerm manualmente desde: https://wezfurlong.org/wezterm/install.html"
 }
 
 # 🧩 Configurar Zellij con tema Tokyo Night
